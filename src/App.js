@@ -1,14 +1,11 @@
 import './App.css';
-
 import React, { Component } from 'react'
 import Navbar from './component/Navbar';
 import News from './component/News';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
+
+
 export default class App extends Component {
 
   apiKey = '1508a4c8d165499f8946cd29efba5848';
