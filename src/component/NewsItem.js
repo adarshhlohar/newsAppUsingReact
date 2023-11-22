@@ -1,11 +1,11 @@
 import React from "react";
 
-const NewsItem = ()=> {
-    let { title, description, imageUrl, newsUrl, author, date, sourceName } = this.props;
+const NewsItem = (props)=> {
+    let { title, description, imageUrl, newsUrl, author, date, sourceName } = props;
     return (
       <div>
         <div className="card mx-2 my-2">
-          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ right: "85%" }}>
+          <span className=" badge rounded-pill bg-danger" style={{display: 'flex',justifyContent: 'flex-end',position: 'absolute',right: '0'}}>
             {sourceName}</span>
           <img src={imageUrl ? imageUrl : "https://timesofindia.indiatimes.com/photo/msid-104669395,imgsize-1288394.cms"} className="card-img-top" alt="..." />
           <div className="card-body">
